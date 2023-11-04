@@ -25,7 +25,7 @@ Shell commands are instructions given to the shell to perform specific tasks. Th
 
 ### Command-line arguments
 
-Command-line arguments are values provided to a command when it's executed. They allow you to pass data to the command to control its behavior.
+Command-line arguments are values provided to a command when it's executed. They allow you to pass data to the command to control its behaviour.
 
 ### File path
 
@@ -61,11 +61,12 @@ A shebang("#!/bin/bash") at the beginning of a file tells the system which shell
 
 ### Quick start
 
-Let's get acquited with some basics commands, how they work, and how to use them before we move to the next section.
+Let's get familiar with some basic commands, how they work, and how to use them before we move to the next section.
 
 **Basic commands**:
 - `pwd`: prints the current working directory.
 - `ls`: list files and directories.
 - `cd`: change directory.
+- `man`: man pages. It is really helps to know more about commands.
 
 make sure to open up your terminal to test these commands.
