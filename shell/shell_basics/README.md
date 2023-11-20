@@ -58,15 +58,3 @@ To execute a shell script, you need to make it executable using `chmod`, then ex
 ### shebang
 
 A shebang("#!/bin/bash") at the beginning of a file tells the system which shell to use.
-
-### Quick start
-
-Let's get familiar with some basic commands, how they work, and how to use them before we move to the next section.
-
-**Basic commands**:
-- `pwd`: prints the current working directory.
-- `ls`: list files and directories.
-- `cd`: change directory.
-- `man`: man pages. It is really helps to know more about commands.
-
-make sure to open up your terminal to test these commands.
