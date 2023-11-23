@@ -2,15 +2,17 @@
 
 ## Overview
 
-In this lesson, we'll learn how to move around, look into a directory.
-The basic command we'd using here include:
+In this lesson, we will explore the fundamentals of navigating and examining directories in Linux.
+
+**key commands:**
+
 - `pwd`: print working directory.
 - `cd`: change directory.
 - `ls`: list directory content.
 
-## FHS
+## Filesystem Hierarchical Standard (FHS)
 
-FHS refers to filesystem hierarchical standard. You can visit [FHS](https://refspecs.linuxfoundation.org/fhs.shtml) to know more, but i'll do a quick highlight.
+The Filesystem Hierarchical Standard (FHS) establishes the directory structure in Linux. A quick overview is provided below:
 
 - `/`: The root directory where the filesystem begins.
 - `/home`: User home directories.
@@ -29,23 +31,48 @@ FHS refers to filesystem hierarchical standard. You can visit [FHS](https://refs
 - `/usr`: secondary binaries.
 - `/var`: variable data.
 
+You can visit [FHS](https://refspecs.linuxfoundation.org/fhs.shtml) to know more.
 
-**pwd**
 
-Your current in the linux files is your working directory, to see the name of the directory use `pwd`.
+## Commands in Detail
 
-**ls**
+### pwd
 
-To list the files and directories in the working directory, use `ls` command.
+The `pwd` command reveals the current location within the Linux file system. It displays the working directory.
 
-**cd**
+**Example:**
 
-To change your working directory, use `cd` followed by the path name of the directory, because using just the `cd` command will take you to the home directory.
+```
+$ pwd
+/home/user
+```
 
-## Absolute path
+### ls
 
-An absolute path begins with the root directory and follows the tree branch to the desired file or directory.
-Example:
+To obtain a listing of files and directories in the current working directory, use the `ls` command.
+
+**Example:**
+
+```
+$ ls
+file1.txt file2.txt directory1 directory2
+```
+
+### cd
+
+The `cd` command facilitates changing the working directory. If used without specifying a path, it will take you to the home directory.
+
+**Example:**
+
+```
+$ cd /path/to/directory
+```
+
+## Path Specifications
+
+### Absolute path
+
+An absolute path originates from the root directory, navigating through the directory tree to reach the desired file or directory. For instance:
 
 ```
 /
@@ -58,34 +85,70 @@ Example:
 |   |-share
 |-var
 ```
-so, let say you're moving to `local/bin`, from the root, your path will be `/usr/local/bin`. That means you need to run `cd /usr/local/bin` to get to your desired directory.
+Assuming you're moving to `local/bin`, from the root, your path will be `/usr/local/bin`. That means you need to run `cd /usr/local/bin` to get to your desired directory.
 
-## Relative path
+### Relative path
 
-A relative path starts from the current working directory.dot (.) represent the current working directory and dot dot(..) represent the parent directory of the working directory.
-Example:
+Contrastingly, a relative path starts from the current working directory. The dot (`.`) signifies the current working directory, while dot dot (`..`) refers to the parent directory.
+
+**Example:**
 
 Let's move to `/usr/local/bin`, then run `cd ..`, after running the command, you should be in `/usr/local`, run `pwd` to confirm whether you're there or not.
 
-## Shortcuts
+```
+$ cd /usr/local/bin
+$ cd ..
+$ pwd
+/usr/local
+```
+
+## Useful Shortcuts
 
 - running `cd` with no argument will take you to the home directory.
 - running `cd -` will take you to the previous directory.
 
-**Usage of commands**
+## Command Usage Pattern
 
-The usage pattern of almost every command is:
+The general pattern for command usage is:
+
 ```
-command -options arguments
+command arguments
 ```
-where _command_ is the name of the command you want to use, _-options_ is the available flags to control the behaviour of the command, and _arguments_ is one or more files or directory upon which the command operates.
+Here, `command` is the name of the command, and `arguments` are additional information passed to the command.
 
-Almost all commands have man pages, so if you're not sure about using a command, you can check the man page for guide.
-To check a command man page, run `man command`. Replace _command_ with the command you're having issues with.
+***You can use multiple arguments for a single command***.
 
-Man pages is really helpful to explore the full power of a command.
+### Arguments
 
-Let's take `ls` command for example:
-run `man ls` and you'll see all available options for ls. let's choose the _-a_ option and see what it does. run `ls -a` and you'll notice that files and directories that their name started with dot(.) are also listed with the normal files and directories. Normally, all files and directory that their name started with dot(.). are hidden files but the _-a_ option gives us the chance to see them.
+Arguments in command-line usage can include various types of information depending on the specific command or script you're running. Here are common types of arguments:
 
-If you're not in the directory that you want see it's content, you can add the path of the directory as an argument.e.g `ls -a /usr`.
+1. File Paths or Directories:
+    - Example: /path/to/file or /directory/
+
+2. Options or Flags:
+    - Single-character options (e.g., `-a` for "all").
+    - Full-word options (e.g., `--verbose`).
+
+3. Values or Parameters:
+    - Information required by a command for a specific operation.
+    - Example: `cp sourcefile destination`, `mv sourcefile destination` ...
+
+4. Patterns:
+    - Patterns or expressions used for matching files or data.
+    - Example: `grep pattern filename`
+
+And so on.
+
+The specific types of arguments a command accepts are defined by the command itself. To understand what arguments are supported and how they should be used, you can refer to the command's manual pages using the `man` command. For example, `man ls` provides information about the ls command and its available options and arguments.
+
+## Leveraging Command Options
+
+Most commands come with manual pages (man pages) providing comprehensive guidance. To access a command's man page, run the following command:
+
+```
+man command
+```
+
+For example, exploring the `ls` command with `man ls` reveals all available options. Using `ls -a` showcases hidden files whose names begin with a dot (`.`). If not in the desired directory, you can specify the path as an argument, e.g., `ls -a /usr`.
+
+***The utilization of man pages is invaluable for unlocking the full potential of a command***.
