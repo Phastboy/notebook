@@ -8,13 +8,13 @@
 
 - [Shell navigations](shell_navigations/README.md)
 
-## Shell Permissions and Ownership
-
-- [Shell Permissions and Ownership](shell_permissions_&_ownership/README.md)
-
 ## Shell Manipulations
 
 - [Shell Manipulations](shell_manipulations/README.md)
+
+## Shell Permissions and Ownership
+
+- [Shell Permissions and Ownership](shell_permissions_&_ownership/README.md)
 
 ## Shell Redirections and Piping
 
