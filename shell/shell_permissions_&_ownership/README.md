@@ -38,27 +38,30 @@ The sum of these numbers represents the permission set.
 
 #### Examples for Changing Permissions
 
-1. **Symbolic Notation for Adding and Removing Permissions:**
-    - Use `chmod` with symbolic notation to add (`+`) or remove (`-`) permissions.
-        ```
-        chmod +x file.sh # adds execute permission to file.sh.
+##### Symbolic Notation for Adding and Removing Permissions
 
-        chmod -w file.txt # removes write permission from file.txt
-        ``` 
+Use `chmod` with symbolic notation to add (`+`) or remove (`-`) permissions.
 
-2. **Numeric Notation for Setting Specific Permissions:**
+```bash
+    chmod +x file.sh # adds execute permission to file.sh.
 
-    - Use `chmod` with numeric notation to set specific permissions.
-    ```
-    chmod 644 file.txt  # sets read and write for owner, read for group and others
-    chmod 510 script.sh # sets read and execute for owner, execute for group, and no permissions for others
-    ```
+    chmod -w file.txt # removes write permission from file.txt
+``` 
+##### Numeric Notation for Setting Specific Permissions
+
+Use `chmod` with numeric notation to set specific permissions.
+
+```bash
+chmod 644 file.txt  # sets read and write for owner, read for group and others
+chmod 510 script.sh # sets read and execute for owner, execute for group, and no permissions for others
+```
 
 
 ### Changing ownership
-- You can use `chown` and `chgrp` commands to change owner and group of a file.
+
+You can use `chown` and `chgrp` commands to change owner and group of a file.
 
 **Example**
-```
+```bash
 chown newowner:newgroup file.txt   # changes owner and group of file.txt
 ```
