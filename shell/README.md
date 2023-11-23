@@ -26,11 +26,11 @@
 
 ## Shell Environment Variables
 
-- [Shell Environment Variables](shell_enviroment_variable/README.md)
+- [Shell Environment Variables](shell_enviroment_variables/README.md)
 
 ## Shell Variables Expansion
 
-- [Shell Variables Expansion](shell_variables_expansion/README.md)
+- [Shell Variables Expansion](shell_variable_expansion/README.md)
 
 ## Shell Scripting
 
