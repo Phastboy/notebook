@@ -41,17 +41,17 @@ The sum of these numbers represents the permission set.
 1. **Symbolic Notation for Adding and Removing Permissions:**
     - Use `chmod` with symbolic notation to add (`+`) or remove (`-`) permissions.
         ```
-        chmod +x file.sh # This adds execute permission to file.sh.
+        chmod +x file.sh # adds execute permission to file.sh.
 
-        chmod -w file.txt # This removes write permission from file.txt
+        chmod -w file.txt # removes write permission from file.txt
         ``` 
 
 2. **Numeric Notation for Setting Specific Permissions:**
 
     - Use `chmod` with numeric notation to set specific permissions.
     ```
-    chmod 644 file.txt  # This sets read and write for owner, read for group and others
-    chmod 510 script.sh # This sets read and execute for owner, execute for group, and no permissions for others
+    chmod 644 file.txt  # sets read and write for owner, read for group and others
+    chmod 510 script.sh # sets read and execute for owner, execute for group, and no permissions for others
     ```
 
 
@@ -60,5 +60,5 @@ The sum of these numbers represents the permission set.
 
 **Example**
 ```
-chown newowner:newgroup file.txt   # This changes owner and group of file.txt
+chown newowner:newgroup file.txt   # changes owner and group of file.txt
 ```
