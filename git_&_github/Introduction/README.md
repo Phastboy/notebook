@@ -29,9 +29,9 @@ One of the most popular version control system is `Git`.
 
 ## Git and GitHub
 
-Git is an open source distributed version control system that tracks changes in any set of computer files.
+**Git** is an open source distributed version control system that tracks changes in any set of computer files.
 
-GitHub is web-based platform for hosting and collaborating on Git repositories.
+**GitHub** is a hosting and collaboration web-based platform that uses git for versioning.
 
 ### Importance of Git and GitHub
 
@@ -59,56 +59,3 @@ GitHub is web-based platform for hosting and collaborating on Git repositories.
 7. **Community Engagement:**
     - GitHub features like Discussions and Actions Marketplace enable developers to share knowledge, seek help, and collaborate on various aspects beyond just code.
 
-## Setting up Git
-
-### Installing Git
-
-#### Linux Installation
-
-- You can install Git on Linux Ubuntu and Debian by running:
-
-    ```bash
-    sudo apt install git
-    ```
-***This for Ubuntu and Debian distribution and will not work for other distribution.***
-
-- After installation, verify Git by running:
-
-    ```bash
-    git --version
-    ```
-
-#### macOS installation
-
-- You can install Git on macOS by running:
-
-    ```bash
-    brew install git
-    ```
-
-- After installation, verify Git by running:
-
-    ```bash
-    git --version
-    ```
-
-### Configure Username, Email and default Branch
-
-#### 1. Configure Username and Email
-
-- Set your Git username and email using the following commands:
-
-    ```bash
-    git config --global user.name "Your Name"
-    git config --global user.email "your.email@example.com"
-    ```
-
-#### 2. Configure Default Branch
-
-- By default, Git uses the term "master" for the main branch. However, there's a move towards more inclusive language, and some repositories may use "main" instead. You can configure Git to use "main" as the default branch globally with:
-
-    ```bash
-    git config --global init.defaultBranch main
-    ```
-
-- This ensures that every time you initialize a new repository, it will default to creating a "main" branch instead of "master."
