@@ -49,6 +49,22 @@ Welcome to Notebook! We appreciate your interest in contributing to our software
 9. **Merge:**
     - Once your pull request is approved, it will be merged into the main branch.
 
+10. **Contribute Articles and Resources:**
+   - Whether you're sharing introductory tutorials or in-depth articles on advanced concepts, your contributions are welcome.
+   - Include examples, practical tips, and real-world scenarios to make the content accessible to learners of all levels.
+
+11. **Multi-Language Support:**
+   - We aim to cover a wide array of programming languages and concepts. Feel free to contribute content in various languages, frameworks, and paradigms.
+
+12. **Structure and Organization:**
+   - Help us maintain a clear and organized structure. If you're unsure where to place your contribution, feel free to reach out for guidance.
+
+13. **Engage in Discussions:**
+   - Participate in discussions, share your experiences, and provide constructive feedback to create an engaging and supportive community.
+
+14. **Spread the Word:**
+   - Help us reach a broader audience. Share the repository with your networks and communities to make learning software engineering a collective endeavor.
+
 ## Code of Conduct
 
 Please note that we have a [Code of Conduct](CODE_OF_CONDUCT.md). We expect all contributors to adhere to it.
@@ -57,5 +73,5 @@ Please note that we have a [Code of Conduct](CODE_OF_CONDUCT.md). We expect all 
 
 If you find any issues or have suggestions, please open an issue.
 
-Thank you for contributing to Notebook! 🚀
+Thank you for contributing to Notebook and making software engineering education accessible to all! 🚀
 
