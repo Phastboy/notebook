@@ -1,6 +1,6 @@
 # Notebook 📚
 
-Welcome to my personal notebook! This dynamic notebook 📚 contains a treasure trove of knowledge about my exhilarating journey in software engineering.
+Welcome to notebook! This dynamic notebook 📚 contains a treasure trove of knowledge about software engineering.
 
 ## Overview 🌟
 
