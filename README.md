@@ -33,6 +33,7 @@ To embark on this epic journey, simply click on the links above to explore the t
 ## Contributing 🤝
 
 This adventure 🏴‍☠️ thrives on collaboration! We welcome contributions from intrepid explorers like you. If you have suggestions, corrections, or wish to add your own discoveries to the map, submit a pull request or raise the flag by opening issues.
+You can check (contribute)[CONTRIBUTING.md] for guidelines.
 
 ## Contact 📧
 
